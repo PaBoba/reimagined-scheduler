@@ -23,12 +23,11 @@ saveBtn9.on('click', function () {
   // past, present, and future classes? How can Day.js be used to get the
   // current hour in 24-hour time?
   console.log(saveData9.val());
-  
+
   if (saveData9.val() == "") {
     alert('Textbox cannot be empty');
-  }
 
-  else (saveData9.val() !== ""); {
+  } else {
     localStorage.setItem("todo@9", saveData9.val());
   }
   // TODO: Add code to get any user input that was saved in localStorage and set
@@ -43,9 +42,8 @@ saveBtn10.on('click', function () {
 
   if (saveData10.val() == "") {
     alert('Textbox cannot be empty');
-  }
 
-  else (saveData10.val() !== ""); {
+  } else {
     localStorage.setItem("todo@10", saveData10.val());
   }
 });
@@ -54,9 +52,8 @@ saveBtn11.on('click', function () {
 
   if (saveData11.val() == "") {
     alert('Textbox cannot be empty');
-  }
 
-  else (saveData11.val() !== ""); {
+  } else {
     localStorage.setItem("todo@11", saveData11.val());
   }
 });
