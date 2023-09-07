@@ -22,14 +22,13 @@ saveBtn9.on('click', function () {
   // current hour in 24-hour time?
   console.log(saveData9.text());
   
-  if (saveData9) {
-    text = "";
-  alert('Textbox cannot be empty');
+  if (saveData9.text() == "") {
+    alert('Textbox cannot be empty');
+    console.log(saveData9.text());
   }
 
-  else (saveData9); {
-    text != "";
-  localStorage.setItem("todo@9", saveData9.text());
+  else (saveData9.text() !== ""); {
+    localStorage.setItem("todo@9", saveData9.text());
   }
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
